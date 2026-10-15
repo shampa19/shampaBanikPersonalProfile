@@ -36,6 +36,15 @@
       border-radius: 50%;
       background: #2fa764;
     }
+    .sidebar .info-content,
+    .sidebar .info-content .name,
+    .sidebar .info-content .title,
+    .sidebar .info-content .bubt,
+    .sidebar .info-content .bubt a {
+      text-align: center !important;
+    }
+    .sidebar .info-content .bubt { margin-top: 10px; }
+    .sidebar .info-content .open-badge { display: table; margin: 12px auto 4px; }
     .about-text .lead { font-size: 1.1em; font-weight: 500; }
     .cta-links a { color: inherit; font-weight: 500; text-decoration: underline; }
   </style>
@@ -197,7 +206,7 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Educator</h4>
                 <p class="service-item-text">
-                  Nearly Three years of university teaching in CS and mathematics, ready to support courses as a teaching assistant.
+                  Nearly two years of university teaching in CS and mathematics, ready to support courses as a teaching assistant.
                 </p>
               </div>
             </li>
@@ -788,6 +797,45 @@
           </ol>
         </section>
 
+      </article>
+
+      <!-- GALLERY (hidden: not in the navbar. Kept so script.js finds its filter elements) -->
+      <article class="gallery" data-page="gallery">
+        <header><h2 class="h2 article-title">Gallery</h2></header>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Contest</button></li>
+            <li class="filter-item"><button data-filter-btn>Posters</button></li>
+            <li class="filter-item"><button data-filter-btn>Other events</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Contest</button></li>
+              <li class="select-item"><button data-select-item>Posters</button></li>
+              <li class="select-item"><button data-select-item>Other events</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="contest">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/contest/WhatsApp Image 2024-12-26 at 1.47.31 AM.jpeg" alt="ICPC Dhaka Regional 2024" loading="lazy">
+                </figure>
+                <h3 class="project-title">ICPC Dhaka Regional Onsite 2024 Contest</h3>
+                <p class="project-category">Programming Contest With Team-Members</p>
+              </a>
+            </li>
+          </ul>
+        </section>
       </article>
 
     </div>
